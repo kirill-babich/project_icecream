@@ -36,7 +36,7 @@
   padding: 30px 0 0;
 }
 .background {
-  min-height: 900px;
+  max-height: 900px;
   background: #ffeaf1;
 }
 .content {
@@ -116,7 +116,7 @@
   justify-content: space-between;
   align-items: center;
   width: 110%;
-  padding: 50 0px;
+  padding:0 0 50px;
 }
 .z1 {
   font-family: "roboto";
@@ -247,8 +247,7 @@ a:active {
 }
 
 .text-titles {
-  padding: 80px;
-  max-width: 450px;
+  max-width: 520px;
 }
 .text-titless{
   max-width:450px;
@@ -332,7 +331,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin: 0 0 150px;
 }
@@ -391,9 +390,18 @@ h4 {
   padding: 5px;
   align-items: center;
 }
-@media (max-width:539.7px) {
+.url{
+  font-weight: 800;
+}
+@media (max-width:765.7px) {
   img{
     max-width: 150px;
+  }
+  .last-flex{
+    justify-content: center;
+  }
+  li{
+    font-size: 12px;
   }
   .icecream-cream{
     display: none;
@@ -424,8 +432,6 @@ h4 {
   }
   .divlast{
     font-size: 10px;
-    justify-content: space-evenly;
-    flex-wrap:nowrap
   }
   .button5{
     margin:5px 0 0;
@@ -504,5 +510,64 @@ h4 {
   }
   .pict{
     margin:0;
+  }
+  .text-input{
+    border:none;
+  }
+  .lasttext{
+    border:none;
+  }
+  .product-flex{
+    justify-content: center;
+  }
+  .url{
+    font-weight: 800;
+  }
+  .div-inputer{
+    display: flex;
+    flex-wrap: nowrap
+  }
+}
+@media (min-width:766px) and (max-width:1477.7px){  
+  .last-imager{
+    max-width: 200px;
+  }
+  .image{
+    max-width: 200px;
+  }
+  img{
+    max-width: 200px;
+  }
+  .img-title{
+    max-width: 200px;
+  }
+  .text-titles{
+    padding: 1px;
+  }
+  .text-titles{
+    max-width: 300px;
+  }
+  .last-imager{
+    margin:100px 0 0;
+  }
+  .last__header{
+    max-width: 300px;
+  }
+  .button5{
+    margin: 0;
+  }
+  .icecream-fon, .icecream-cream{
+    display: none;
+  }
+  .choose__header{
+    justify-content: center;
+  }
+}
+@media (min-width:1478px) and (max-width:1743.7px){  
+  img{
+    max-width: 450px;
+  }
+  .icecream-fon, .icecream-cream{
+    display: none;
   }
 }
