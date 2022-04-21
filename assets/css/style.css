@@ -115,7 +115,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 110%;
+  max-width: 110%;
   padding:0 0 50px;
 }
 .z1 {
@@ -394,6 +394,10 @@ h4 {
   font-weight: 800;
 }
 @media (max-width:765.7px) {
+  
+  .content{
+    padding: 0 5px 0;
+  }
   img{
     max-width: 150px;
   }
@@ -483,6 +487,7 @@ h4 {
     justify-items: center;
     margin: 0 0 40px;
     padding:10px;
+    flex-direction: column;
   }
   .spis{
     flex-direction: column;
